@@ -92,10 +92,6 @@ rows = run_experiment(ExperimentConfig(legacy_rng=True))  # global-stream scenes
 
 See [`CHANGELOG.md`](CHANGELOG.md) for everything that differs from the research code.
 
-## Data and results
-
-The raw simulation output (CSV) and the statistical analysis files of the study are archived
-separately and are not part of this repository. <!-- TODO: add Zenodo DOI -->
 
 ## Citation
 
