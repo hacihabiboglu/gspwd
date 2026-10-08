@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.venv-legacy/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Large / generated artifacts live outside the repo (Zenodo / GitHub release)
+*.jasp
+*.idraw
+*.csv
+*.pdf
+*.svg
+*.png
+out/
+results/
+legacy_src/
+
+# ...except small curated files
+!data/sample/*.csv
+!tests/golden/*.npz
+!docs/figures/*.png
+
+# lock files are for applications, not this library
+uv.lock

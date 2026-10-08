@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gspwd"
+version = "0.1.0.dev0"
+description = "Generalized Spherical Plane-Wave Decomposition: optimized zonal kernels and joint OMP for multi-source DOA estimation"
+readme = "README.md"
+license = "LicenseRef-PolyForm-Strict-1.0.0"  # not in the PEP 639 SPDX list the build tools check
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.10"
+authors = [{ name = "Huseyin Hacihabiboglu" }]
+dependencies = ["numpy>=1.26", "scipy>=1.15"]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.8"]
+analysis = ["pandas>=2.0"]
+dev = ["pytest>=8", "pytest-cov", "ruff", "matplotlib>=3.8", "pandas>=2.0"]
+# healpy is GPL-2.0+; used ONLY as a test oracle, never imported by gspwd itself.
+oracle = ["healpy>=1.16"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gspwd"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["oracle: needs healpy installed (dev-only equivalence tests)"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E741", "B905"]  # l, m are the standard spherical-harmonic degree/order names
+
+[tool.ruff.lint.per-file-ignores]
+"examples/*" = ["E402", "I001"]  # matplotlib.use("Agg") must precede pyplot import

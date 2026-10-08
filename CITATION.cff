@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "GSPWD: Generalized Spherical Plane-Wave Decomposition"
+type: software
+authors:
+  - family-names: Hacihabiboglu
+    given-names: Huseyin
+license: PolyForm-Strict-1.0.0
+version: 0.1.0.dev0
+# TODO(before release): add the paper once it is accepted, e.g.
+# preferred-citation:
+#   type: article
+#   title: "..."
+#   journal: "..."
+#   year: 20XX
+#   doi: "..."
+# and the Zenodo DOI of the archived results under `identifiers`.
