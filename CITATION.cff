@@ -7,10 +7,3 @@ authors:
     given-names: Huseyin
 license: PolyForm-Strict-1.0.0
 version: 0.1.0.dev0
-# TODO(before release): add the paper once it is accepted, e.g.
-preferred-citation:
-   type: article
-   title: "Multiscale Generalized Sparse Plane Wave Decomposition in the Spherical Harmonic Domain"
-   journal: "IEEE Transactions on Audio, Speech and Language Processing (accepted)"
-   year: 2026
-   doi: "TBD"
