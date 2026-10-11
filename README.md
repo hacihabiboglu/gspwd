@@ -1,5 +1,10 @@
 # GSPWD — Generalized Spherical Plane-Wave Decomposition
 
+This Python module implements the multiscale GSPWD method proposed in:
+
+_Hacihabiboglu, H. (2026) Multiscale Generalized Sparse Plane Wave Decomposition in the Spherical Harmonic Domain, 
+IEEE Transactions on Audio, Speech and Language Processing (accepted)_
+
 Direction-of-arrival (DOA) and amplitude estimation of several plane waves from
 spherical-harmonic-domain signals (e.g. ambisonics / spherical microphone arrays), using
 
