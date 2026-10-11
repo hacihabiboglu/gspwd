@@ -11,8 +11,8 @@ spherical-harmonic-domain signals (e.g. ambisonics / spherical microphone arrays
 
 This Python module implements the multiscale GSPWD method proposed in:
 
-Hacihabiboglu, H. (2026) Multiscale Generalized Sparse Plane Wave Decomposition in the Spherical Harmonic Domain, 
-IEEE Transactions on Audio, Speech and Language Processing (accepted)
+_Hacihabiboglu, H. (2026) Multiscale Generalized Sparse Plane Wave Decomposition in the Spherical Harmonic Domain, 
+IEEE Transactions on Audio, Speech and Language Processing (accepted)_
 
 > **License and patent notice.** Free for **noncommercial** use (PolyForm Strict 1.0.0): run it
 > for research, teaching and other noncommercial purposes. Commercial use, and modifying or
